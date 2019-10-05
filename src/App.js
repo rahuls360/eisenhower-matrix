@@ -8,18 +8,18 @@ function App() {
   return (
     <div className="app-main">
       <div className="container mt-3">
-        <div className="columns">
-          <div className="column">
-            <Card setOpen={setOpen} open={open} />
+        <div className="columns is-gapless is-multiline">
+          <div className="column is-half">
+            <Card setOpen={setOpen} open={open} title="DO first" />
           </div>
-          <div className="column">
-            <Card setOpen={setOpen} open={open} />
+          <div className="column is-half">
+            <Card setOpen={setOpen} open={open} title="Schedule" />
           </div>
-          <div className="column">
-            <Card setOpen={setOpen} open={open} />
+          <div className="column is-half">
+            <Card setOpen={setOpen} open={open} title="Delegate" />
           </div>
-          <div className="column">
-            <Card setOpen={setOpen} open={open} />
+          <div className="column is-half">
+            <Card setOpen={setOpen} open={open} title="Avoid" />
           </div>
         </div>
         <div className={classNames({
